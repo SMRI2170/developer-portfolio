@@ -214,7 +214,7 @@ export const profile = {
       video: null as string | null,
       icon: '/works/emotiondiary/icon-emotiondiary.png',
       href: 'https://smri2170.github.io/Official-Website-of-Emotion-Diary/' as string | null,
-      github: 'https://github.com/ryosuke-404/Emotion-Diary' as string | null,
+      github: 'https://github.com/SMRI2170/Emotion-Diary' as string | null,
     },
     {
       id: 'oshikatsu',
@@ -236,7 +236,28 @@ export const profile = {
       video: null as string | null,
       icon: '/works/oshikatsu/icon-oshikatuniiki.png',
       href: 'https://smri2170.github.io/Official-Website-of-oshi-diary/' as string | null,
-      github: 'https://github.com/ryosuke-404/oshikatsu' as string | null,
+      github: 'https://github.com/SMRI2170/oshikatsu' as string | null,
+    },
+    {
+      id: 'bus-od',
+      title: 'Bus OD Survey — Edge AI Analysis System',
+      role: 'Edge AI Engineer / Research & Development',
+      description:
+        '全但バスの路線最適化プロジェクトに参加。OD調査・乗客属性分析を効率化するため、車内外カメラ映像から年齢層・性別・表情の推定、車種特定、プライバシー保護のための自動モザイク処理を一貫して行うAIパイプラインを構築。NVIDIA Jetson上でのリアルタイム推論最適化、電柱検知とGPS統合による位置情報紐づけシステムを実装。',
+      tags: ['Python', 'NanoOWL', 'NVIDIA Jetson', 'Edge AI', 'Computer Vision', 'Object Detection', 'GPS Integration'],
+      accent: '#c4956a',
+      year: '2024 - Present',
+      image: '/works/bus-od/1demo.gif',
+      images: [
+        '/works/bus-od/1demo.gif',
+        '/works/bus-od/2demo.gif',
+        '/works/bus-od/3gurafu.png',
+        '/works/bus-od/4bus.png',
+      ] as string[],
+      video: null as string | null,
+      icon: null as string | null,
+      href: null as string | null,
+      github: null as string | null,
     },
     {
       id: 'uav',
@@ -258,7 +279,7 @@ export const profile = {
       video: null as string | null,
       icon: '/works/uav/icon.png',
       href: null as string | null,
-      github: 'https://github.com/ryosuke-404/zerosky' as string | null,
+      github: 'https://github.com/SMRI2170/zerosky' as string | null,
     },
   ],
 
@@ -315,7 +336,7 @@ export const profile = {
     sub: 'プロジェクトのご相談、お仕事の依頼、ただの雑談でも歓迎です。',
     email: 'devbyryosuke2025@gmail.com',
     links: [
-      { label: 'GitHub',      href: 'https://github.com/ryosuke-404', active: true  },
+      { label: 'GitHub',      href: 'https://github.com/SMRI2170', active: true  },
       { label: 'Twitter / X', href: null,                              active: false },
       { label: 'LinkedIn',    href: null,                              active: false },
     ],

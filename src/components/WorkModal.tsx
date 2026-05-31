@@ -146,9 +146,11 @@ export default function WorkModal({ work, onClose }: Props) {
                     className="absolute inset-0 flex items-center justify-center"
                     style={{ background: `radial-gradient(circle at 50% 55%, ${work.accent}28 0%, #0c0c0f 70%)` }}
                   >
+                    {work.icon && (
                     <div className="relative w-32 h-32">
                       <Image src={work.icon} alt={work.title} fill sizes="128px" className="object-contain drop-shadow-2xl" />
                     </div>
+                  )}
                   </div>
                 )}
 
@@ -239,9 +241,11 @@ export default function WorkModal({ work, onClose }: Props) {
 
               {/* Meta */}
               <div className="flex items-center gap-3 mb-4 md:mb-6">
-                <div className="relative w-10 h-10 rounded-xl overflow-hidden border border-[var(--border)] shrink-0">
-                  <Image src={work.icon} alt="" fill sizes="40px" className="object-cover" />
-                </div>
+                {work.icon && (
+                  <div className="relative w-10 h-10 rounded-xl overflow-hidden border border-[var(--border)] shrink-0">
+                    <Image src={work.icon} alt="" fill sizes="40px" className="object-cover" />
+                  </div>
+                )}
                 <div>
                   <span className="font-mono text-[10px] tracking-widest uppercase" style={{ color: work.accent }}>
                     {work.role}

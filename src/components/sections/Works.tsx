@@ -63,13 +63,15 @@ function WorkPanel({
               background: `radial-gradient(circle at 50% 55%, ${work.accent}30 0%, #0c0c0f 70%)`,
             }}
           >
-            <motion.div
-              className="relative w-40 h-40"
-              whileHover={{ scale: 1.08, rotate: 3 }}
-              transition={{ duration: 0.4 }}
-            >
-              <Image src={work.icon} alt={work.title} fill sizes="160px" className="object-contain drop-shadow-2xl" />
-            </motion.div>
+            {work.icon && (
+              <motion.div
+                className="relative w-40 h-40"
+                whileHover={{ scale: 1.08, rotate: 3 }}
+                transition={{ duration: 0.4 }}
+              >
+                <Image src={work.icon} alt={work.title} fill sizes="160px" className="object-contain drop-shadow-2xl" />
+              </motion.div>
+            )}
           </div>
         )}
 
@@ -112,9 +114,11 @@ function WorkPanel({
         >
           {/* メタ情報 */}
           <div className="flex items-center gap-3 mb-5">
-            <div className="relative w-8 h-8 rounded-xl overflow-hidden border border-[var(--border)]">
-              <Image src={work.icon} alt="" fill sizes="32px" className="object-cover" />
-            </div>
+            {work.icon && (
+              <div className="relative w-8 h-8 rounded-xl overflow-hidden border border-[var(--border)]">
+                <Image src={work.icon} alt="" fill sizes="32px" className="object-cover" />
+              </div>
+            )}
             <div>
               <span className="font-mono text-[10px] tracking-widest uppercase" style={{ color: work.accent }}>
                 {work.role}
